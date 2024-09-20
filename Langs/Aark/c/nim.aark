@@ -1,0 +1,74 @@
+poke 7
+fnr 0 PC:1
+poke 5
+fnr 0 Nim: Computer goes first!
+peek
+poke 7
+peek
+poke 1
+fnr 0 Sum:1
+peek
+bne goto start
+:loop
+poke 7
+peek
+poke 1
+peek
+:start
+poke 0
+inp
+bne 1 add2
+poke 0
+bne 2 add1
+
+poke 7
+fnr PC:2 PC:1
+
+poke 1
+bne Sum:2 next
+
+:2add
+poke 7
+fnr PC:1 PC:2
+poke 1
+bne goto add1
+
+:next
+bne goto add1
+bne Sum:6 skip
+bne goto 2add
+
+:skip
+poke 1
+bne Win! loop
+
+poke 7
+peek
+poke 6
+fnr 0 Computer wins!
+peek
+bne goto halt
+
+:add1
+poke 1
+fnr Sum:6 Win!
+fnr Sum:5 Sum:6
+fnr Sum:4 Sum:5
+fnr Sum:3 Sum:4
+fnr Sum:2 Sum:3
+fnr Sum:1 Sum:2
+fnr Sum:0 Sum:1
+ret
+
+:add2
+poke 1
+fnr Sum:6 Win!
+fnr Sum:5 Win!
+fnr Sum:4 Sum:6
+fnr Sum:3 Sum:5
+fnr Sum:2 Sum:4
+fnr Sum:1 Sum:3
+fnr Sum:0 Sum:2
+ret
+
+:halt

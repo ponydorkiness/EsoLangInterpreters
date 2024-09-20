@@ -1,0 +1,5 @@
+:loop
+poke 0
+inp
+peek
+bne goto loop

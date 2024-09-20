@@ -1,0 +1,4 @@
+poke 0
+fnr 0 Hello world!
+peek
+inp

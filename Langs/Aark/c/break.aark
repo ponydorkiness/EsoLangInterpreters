@@ -1,0 +1,5 @@
+fnr 0 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaafnr
+peek
+poke 1
+peek
+inp
