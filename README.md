@@ -1,7 +1,7 @@
 # JSInterpreters
-EsoLangs In here contain
-Wizzcake
-Wizzcake+
-Ferntape
-Aarkinitio
-Nope
+EsoLangs In here contain<br>
+Wizzcake<br>
+Wizzcake+<br>
+Ferntape<br>
+Aarkinitio<br>
+Nope<br>
